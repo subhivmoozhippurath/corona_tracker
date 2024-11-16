@@ -3,8 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 const stateSlice = createSlice({
   name: "state name",
   initialState: {
-    selectedState: "All", // Track selected state
-    selectedStateData: {}, // Store data related to the selected state
+    selectedState: "Kerala", // Track selected state
+    selectedStateData: {
+      Total: 50000,
+      Active: 10000,
+      Recovered: 38000,
+      Deaths: 2000,
+    }, // Store data related to the selected state
   },
   reducers: {
     setSelectedStateData: (state, action) => {

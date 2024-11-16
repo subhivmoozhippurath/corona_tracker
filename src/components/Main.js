@@ -7,6 +7,7 @@ import Map from './Map'
 const Main = () => {
   // Access the selected state data from Redux store
   const selectedStateData = useSelector(state => state.state.selectedStateData);
+  const stateData = useSelector((state) => state.state.selectedStateData);
 
   // Check if selected state data exists
   if (!selectedStateData.Total) {
@@ -78,9 +79,8 @@ const Main = () => {
 
   return (
   <>
-      <div className="flex justify-between gap-4 p-4">
       {/* Left Section: Pie Chart */}
-      <div className="w-1/2">
+      <div className="w-3/4 m-auto">
         <Plot
           data={[pieChartData]}
           layout={{
@@ -92,7 +92,7 @@ const Main = () => {
       </div>
 
       {/* Right Section: Line Chart */}
-      <div className="w-1/2">
+      <div className="w-3/4 m-auto">
         <Plot
           data={lineChartData}
           layout={{
@@ -103,7 +103,7 @@ const Main = () => {
           }}
         />
       </div>
-    </div>
+   
     <div className='w-3/4 m-auto h-80'> 
       <Map />
     </div>

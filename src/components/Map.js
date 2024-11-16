@@ -19,6 +19,7 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
+        
         {/* Loop through the states and add markers */}
         {Object.keys(covidData.India.States).map((state) => {
           const stateInfo = covidData.India.States[state];
