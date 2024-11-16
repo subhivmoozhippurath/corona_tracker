@@ -1,4 +1,4 @@
-export const coviData ={
+export const covidData ={
     "India": {
       "Total": 1000000,
       "Active": 200000,
