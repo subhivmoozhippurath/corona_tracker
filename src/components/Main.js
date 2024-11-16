@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Plot from 'react-plotly.js';  // Import Plotly component
-import '../../src/tailwind.css'
+import '../../src/tailwind.css';
+import Map from './Map'
 
 const Main = () => {
   // Access the selected state data from Redux store
@@ -76,7 +77,8 @@ const Main = () => {
   ];
 
   return (
-    <div className="flex justify-between gap-4 p-4">
+  <>
+      <div className="flex justify-between gap-4 p-4">
       {/* Left Section: Pie Chart */}
       <div className="w-1/2">
         <Plot
@@ -102,6 +104,11 @@ const Main = () => {
         />
       </div>
     </div>
+    <div className='w-3/4 m-auto h-80'> 
+      <Map />
+    </div>
+
+  </>
   );
 };
 
