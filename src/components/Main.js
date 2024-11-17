@@ -80,7 +80,7 @@ const Main = () => {
   return (
   <>
       {/* Left Section: Pie Chart */}
-      <div className="w-3/4 m-auto">
+      <div className="w-3/4 m-auto pie-chart-container">
         <Plot
           data={[pieChartData]}
           layout={{
@@ -92,7 +92,7 @@ const Main = () => {
       </div>
 
       {/* Right Section: Line Chart */}
-      <div className="w-3/4 m-auto">
+      <div className="w-3/4 m-auto pie-chart-container">
         <Plot
           data={lineChartData}
           layout={{
@@ -101,6 +101,7 @@ const Main = () => {
             yaxis: { title: 'Cases' },
             height: 400
           }}
+
         />
       </div>
    

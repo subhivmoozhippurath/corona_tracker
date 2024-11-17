@@ -17,10 +17,8 @@ const Header = () => {
       const stateName = e.target.value;
       setSelectedStateLocal(stateName);
   
-      // Get state data based on the selected state
       const stateData = stateName === 'All' ? covidData.India : covidData.India.States[stateName];
   
-      // Dispatch action to store the selected state and its data in Redux store
       dispatch(setSelectedStateData({ stateName, stateData }));
     };
     

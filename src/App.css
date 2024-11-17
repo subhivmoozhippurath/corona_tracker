@@ -1,3 +1,18 @@
-.h-full {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* @media (max-width: 768px) { 
+  ::ng-deep .pie-chart-container>.js-plotly-plot>.plot-container.plotly>.user-select-none.svg-container{
+    width: 300px !important;
+    height: auto !important;
+  }
+} */
